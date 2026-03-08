@@ -1,7 +1,6 @@
-from __future__ import annotations
-
 """BAML-backed classification helpers."""
 
+from __future__ import annotations
 from baml_client.sync_client import b  # type: ignore
 from classifyagent.models import ClassificationEntry, PayloadItem
 
