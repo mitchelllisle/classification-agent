@@ -1,5 +1,6 @@
 """Service layer for payload classification."""
 
+from __future__ import annotations
 from classifyagent.classifier import classify_payload_with_agent
 from classifyagent.models import PayloadItem, RunResult
 

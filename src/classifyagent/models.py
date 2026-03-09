@@ -1,5 +1,6 @@
 """Pydantic models for request and response contracts."""
 
+from __future__ import annotations
 from typing import Literal
 
 from pydantic import BaseModel, Field
