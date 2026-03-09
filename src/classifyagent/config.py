@@ -1,18 +1,20 @@
-from __future__ import annotations
-
 """Runtime settings for the classification service."""
 
-from pydantic import Field
+from pydantic import Field, BaseModel
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-
-class Settings(BaseSettings):
-    """Application settings loaded from environment variables."""
+class AnthropicConfig(BaseSettings):
+    """Anthropic API configuration settings."""
 
     model_config = SettingsConfigDict(
-        env_file=".env",
-        env_file_encoding="utf-8",
-        extra="ignore",
+        env_prefix="ANTHROPIC_",
     )
 
-    anthropic_api_key: str = Field(min_length=1)
+    api_key: str = Field(min_length=1)
+
+
+class Settings(BaseModel):
+    """Application settings loaded from environment variables."""
+
+    anthropic: AnthropicConfig = AnthropicConfig()
+

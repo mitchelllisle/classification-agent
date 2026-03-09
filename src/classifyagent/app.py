@@ -1,5 +1,3 @@
-"""FastAPI application for the classification agent service."""
-
 from fastapi import FastAPI, HTTPException
 
 from classifyagent import __version__

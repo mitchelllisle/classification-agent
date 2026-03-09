@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 """Service layer for payload classification."""
 
 from classifyagent.classifier import classify_payload_with_agent

@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 """Pydantic models for request and response contracts."""
 
 from typing import Literal

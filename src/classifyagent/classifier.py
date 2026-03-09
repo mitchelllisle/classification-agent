@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 """BAML-backed classification helpers."""
 
 from baml_client.sync_client import b  # type: ignore
